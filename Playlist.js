@@ -63,7 +63,7 @@ class Trap extends Musica {
 }
 
 // Classe Playlist
-class Playlist {
+export default class Playlist {
     constructor(nome) {
         this.nome = nome;
         this.musicas = [];
@@ -94,38 +94,23 @@ class Playlist {
 // Criando músicas brasileiras
 // ==========================
 
-const m1 = new Pop('Surreal', 'Luísa Sonza');
-const m2 = new Pop('Motinha 2.0', 'Luísa Sonza');
-const m3 = new MPB('Amor I Love You', 'Marisa Monte');
-const m4 = new Pop('Sagrado Profano', 'Luísa Sonza');
-const m5 = new Pop('Envolver', 'Anitta');
-const m6 = new Sertanejo('Derreter a Aliança', 'Zé Neto e Cristiano');
-const m7 = new Sertanejo('Barulho do Foguete', 'Zé Neto e Cristiano');
-const m8 = new Sertanejo('Seu Policia', 'Zé Neto e Cristiano');
-const m9 = new MPB('Por Supuesto', 'Marina Sena');
-const m10 = new Sertanejo('Infil', 'Marilía Mendonça');
-const m11 = new Sertanejo('Solteiro não Trai', 'Gustavo Mioto');
-const m12 = new MPB('Me Sinto Abençoada', 'Marina Sena');
-const m13 = new Rap('Terapia', 'Ebony');
-const m14 = new Rap('Extraordinária', 'Ebony');
-const m15 = new Sertanejo('Anti Amor', 'Gustavo Mioto');
-const m16 = new Rap('Amina', 'Tasha & Tracie');
-const m17 = new Rap('Diz', 'Duquesa');
-const m18 = new Trap('Purple Rain', 'Duquesa');
-const m19 = new Rap('Dharma', 'Ajuliacosta');
-const m20 = new Rap('Set Ajc2', 'Ajuliacosta');
-
-// ==========================
-// Criando playlist - (BLOCO DE TESTES REMOVIDO PARA EXPORTAÇÃO)
-// ==========================
-
-// ==========================
-// Exibindo no console - (BLOCO DE TESTES REMOVIDO PARA EXPORTAÇÃO)
-// ==========================
-
-// EXPORTAÇÃO PARA O CONTROLADOR (NOVO)
-module.exports = {
-    Playlist,
-    m1, m2, m3, m4, m5, m6, m7, m8, m9, m10,
-    m11, m12, m13, m14, m15, m16, m17, m18, m19, m20
-};
+export const m1 = new Pop('Surreal', 'Luísa Sonza');
+export const m2 = new Pop('Motinha 2.0', 'Luísa Sonza');
+export const m3 = new MPB('Amor I Love You', 'Marisa Monte');
+export const m4 = new Pop('Sagrado Profano', 'Luísa Sonza');
+export const m5 = new Pop('Envolver', 'Anitta');
+export const m6 = new Sertanejo('Derreter a Aliança', 'Zé Neto e Cristiano');
+export const m7 = new Sertanejo('Barulho do Foguete', 'Zé Neto e Cristiano');
+export const m8 = new Sertanejo('Seu Policia', 'Zé Neto e Cristiano');
+export const m9 = new MPB('Por Supuesto', 'Marina Sena');
+export const m10 = new Sertanejo('Infil', 'Marilía Mendonça');
+export const m11 = new Sertanejo('Solteiro não Trai', 'Gustavo Mioto');
+export const m12 = new MPB('Me Sinto Abençoada', 'Marina Sena');
+export const m13 = new Rap('Terapia', 'Ebony');
+export const m14 = new Rap('Extraordinária', 'Ebony');
+export const m15 = new Sertanejo('Anti Amor', 'Gustavo Mioto');
+export const m16 = new Rap('Amina', 'Tasha & Tracie');
+export const m17 = new Rap('Diz', 'Duquesa');
+export const m18 = new Trap('Purple Rain', 'Duquesa');
+export const m19 = new Rap('Dharma', 'Ajuliacosta');
+export const m20 = new Rap('Set Ajc2', 'Ajuliacosta');
