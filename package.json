@@ -1,0 +1,14 @@
+{
+  "name": "pda",
+  "version": "1.0.0",
+  "description": "Projeto PDA em Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
