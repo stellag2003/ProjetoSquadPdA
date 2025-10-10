@@ -1,7 +1,7 @@
  import readline from "readline";
 import { z } from 'zod';
 
-const rl = readline.createInterface({
+export const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
@@ -24,7 +24,7 @@ const musicaSchema = z.string() // chamei o zod
     .min(3, "O nome da música deve ter pelo menos 3 caracteres")
     .regex(/^[A-Za-zÀ-ÿ\s]+$/, "O nome da música deve conter apenas letras e espaços");
 
-function adicionaMusicas(array) {
+export function adicionaMusicas(array) {
     rl.question("Digite o nome da música que deseja adicionar: ", (nome) => {
 
         // Valida usando Zod
@@ -44,7 +44,7 @@ function adicionaMusicas(array) {
 }
 adicionaMusicas(testeMusicas);
 
-function listaMusicas(array) {
+export function listaMusicas(array) {
     array.forEach(musica => {
 
         console.log(musica.nome);
@@ -54,7 +54,7 @@ function listaMusicas(array) {
 }
 //listaMusicas(testeMusicas)
 
-function deletaMusicas(array) {
+export function deletaMusicas(array) {
     const musicaSchema = z.string()
         .min(3, "O nome da música deve ter pelo menos 3 caracteres")
         .regex(/^[A-Za-zÀ-ÿ\s]+$/, "O nome da música deve conter apenas letras e espaços");
@@ -87,7 +87,7 @@ function deletaMusicas(array) {
 
 //deletaMusicas(testeMusicas)
 
-function atualizaMusicas(array) {
+export function atualizaMusicas(array) {
     const musicaSchema = z.string()
         .min(3, "O nome da música deve ter pelo menos 3 caracteres")
         .regex(/^[A-Za-zÀ-ÿ\s]+$/, "O nome da música deve conter apenas letras e espaços");
