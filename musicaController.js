@@ -1,4 +1,4 @@
-import readline from "readline";
+ import readline from "readline";
 import { z } from 'zod';
 
 const rl = readline.createInterface({
