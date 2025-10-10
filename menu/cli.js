@@ -1,4 +1,4 @@
-import { rl, adicionaMusicas, listaMusicas, deletaMusicas, atualizaMusicas  } from "./musicaController.js";
+import { rl, adicionaMusicas, listaMusicas, deletaMusicas, atualizaMusicas  } from "../musicaController.js";
 
 function exibirMenu() {
     console.log("Bem vindo ao Make Hits 🎧")

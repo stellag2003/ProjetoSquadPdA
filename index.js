@@ -1,4 +1,4 @@
-import { exibirMenu } from "./menu/menu.js";
+import { exibirMenu } from "./menu/cli.js";
 
 exibirMenu();
 
