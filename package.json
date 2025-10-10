@@ -1,14 +1,25 @@
 {
-  "name": "pda",
+  "name": "projetofinal",
   "version": "1.0.0",
-  "description": "Projeto PDA em Node.js",
-  "main": "index.js",
+  "description": "",
+  "main": "funcoes.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "ISC",
+  "dependencies": {
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellag2003/ProjetoSquadPdA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stellag2003/ProjetoSquadPdA/issues"
+  },
+  "homepage": "https://github.com/stellag2003/ProjetoSquadPdA#readme"
 }
