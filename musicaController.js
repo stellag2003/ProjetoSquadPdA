@@ -6,7 +6,7 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-const testeMusicas = [ // base de dados pra teste
+export const testeMusicas = [ // base de dados pra teste
     {
         nome: 'I Want To Break Free',
         cantor: 'Quenn',
