@@ -1,4 +1,4 @@
-import { bancoMusicas } from './data/bancoMusicas.js';
+import { bancoMusica } from '../data/bancoMusica.js';
 
 export default class Playlist {
     #musicas = [];
@@ -7,7 +7,7 @@ export default class Playlist {
         this.nome = nome;
 
         if (inicial) {
-            this.#musicas = [...bancoMusicas];
+            this.#musicas = [...bancoMusica];
         }
     }
 
@@ -37,4 +37,4 @@ export default class Playlist {
 }
 
 const minhaPlaylist = new Playlist("Favoritas");
-minhaPlaylist.adicionarMusica(bancoMusicas[0]); // adiciona a primeira música do banco
+minhaPlaylist.adicionarMusica(bancoMusica[0]); // adiciona a primeira música do banco

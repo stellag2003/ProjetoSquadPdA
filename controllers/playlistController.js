@@ -1,5 +1,7 @@
 // INTEGRAÇÃO (NOVO): Importa a Classe Playlist do arquivo Playlist.js
 import Playlist from '../classes/Playlist.js';
+import { rl } from './musicaController.js';
+
 
 // Falso banco de dados:
 let playlists = [];
@@ -7,20 +9,25 @@ let playlists = [];
 // CRUD 
 
 // CRIAR: (ALTERADO: usa a Classe Playlist importada)
-function criarPlaylist(nome) {
-    const novaPlaylist = new Playlist(nome); // ALTERAÇÃO AQUI: usa a Classe Playlist
+export function criarPlaylist(callback) {
+    rl.question("Digite o nome da playlist: ", (nome) => {
+        const novaPlaylist = new Playlist(nome); 
+        playlists.push(novaPlaylist);
+        console.log(`Playlist "${nome}" criada com sucesso!`);
 
-    playlists.push(novaPlaylist);
-    return novaPlaylist;
+        if (callback) callback();
+        
+    });
 }
 
 // LISTAR:
-function listarPlaylist() {
+export function listarPlaylist(callback) {
     return playlists;
+     if (callback) callback();
 }
 
 // ATUALIZAR: (Correção de digitação em playlistParaAtualizar)
-function atualizarNomeDaPlaylist(nomeAtual, novoNome) {
+export function atualizarNomeDaPlaylist(nomeAtual, novoNome) {
     var playlistParaAtualizar = playlists.find(function(p) {
         return p.nome === nomeAtual;
     });
@@ -35,7 +42,7 @@ function atualizarNomeDaPlaylist(nomeAtual, novoNome) {
 }
 
 // DELETAR: (Correção de digitação em .length)
-function deletarPlaylist(nomeParaDeletar) {
+export function deletarPlaylist(nomeParaDeletar) {
     var tamanhoOriginal = playlists.length;
 
     var playlistsFiltradas = playlists.filter(function(p) {
@@ -44,7 +51,7 @@ function deletarPlaylist(nomeParaDeletar) {
 
     playlists = playlistsFiltradas;
 
-    if (tamanhoOriginal !== playlists.length) { // CORREÇÃO AQUI: era '.lngth'
+    if (tamanhoOriginal !== playlists.length) { 
         return true;
     } else {
         return false;
@@ -61,7 +68,7 @@ const testeMusicas = [{nome: "Oceano",
 
 const playlistAleatoria = [];
 
-function gerarPlaylistAleatoria () {
+export function gerarPlaylistAleatoria () {
     const numParaMover = Math.min(testeMusicas.length);
 
     for (let i=0; i<numParaMover; i++) {
@@ -72,5 +79,4 @@ function gerarPlaylistAleatoria () {
     }
    return console.log(playlistAleatoria);     
 }
-gerarPlaylistAleatoria()
 
