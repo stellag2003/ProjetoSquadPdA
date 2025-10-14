@@ -1,7 +1,7 @@
-# 🎵 Make Hits  
+# 🎵 Make Hits
 
-> Um app para quem vive no ritmo da música!  
-Gerencie suas playlists e descubra novas combinações de hits com facilidade.  
+> Um app para quem vive no ritmo da música!
+Gerencie suas playlists e descubra novas combinações de hits com facilidade.
 
 ---
 
@@ -14,30 +14,30 @@ Gerencie suas playlists e descubra novas combinações de hits com facilidade.
 
 ## 🪄 **Descrição do Projeto**
 
-O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as quatro operações básicas de **CRUD** (*Create, Read, Update, Delete*) para gerenciar **playlists e músicas** diretamente em memória — utilizando arrays como um falso banco de dados.  
+O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as quatro operações básicas de **CRUD** (*Create, Read, Update, Delete*) para gerenciar **playlists e músicas** diretamente em memória — utilizando arrays como um falso banco de dados.
 
-🎧 Ideal para aprender lógica de programação, manipulação de arrays e princípios de CRUD.  
+🎧 Ideal para aprender lógica de programação, manipulação de arrays e princípios de CRUD.
 
 ---
 
 ## ⚙️ **Funcionalidades**
 
-### 🎶 Playlists  
-- ➕ Criar novas playlists  
-- 📋 Listar playlists existentes  
-- ✏️ Atualizar nomes de playlists  
-- 🗑️ Deletar playlists  
+### 🎶 Playlists
+- ➕ Criar novas playlists
+- 📋 Listar playlists existentes
+- ✏️ Atualizar nomes de playlists
+- 🗑️ Deletar playlists
 
-### 🎵 Músicas  
-- 🎼 Adicionar músicas às playlists  
-- 👀 Visualizar músicas de uma playlist  
-- 🔁 Atualizar informações de músicas  
-- ❌ Remover músicas de uma playlist  
+### 🎵 Músicas
+- 🎼 Adicionar músicas às playlists
+- 👀 Visualizar músicas de uma playlist
+- 🔁 Atualizar informações de músicas
+- ❌ Remover músicas de uma playlist
 
-### 💡 Funcionalidades Extras  
-- 🎚️ Listar músicas por gênero  
-- 💖 Exibir músicas favoritas  
-- ⚡ Gerar playlist automática 
+### 💡 Funcionalidades Extras
+- 🎚️ Listar músicas por gênero
+- 💖 Exibir músicas favoritas
+- ⚡ Gerar playlist automática
 
 ---
 
@@ -52,7 +52,7 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
 
 ## 🚀 **Como Executar o Projeto**
 
-1. Verifique se o **Node.js** está instalado em seu computador:  
+1. Verifique se o **Node.js** está instalado em seu computador:
     ```bash
     node -v
     ```
