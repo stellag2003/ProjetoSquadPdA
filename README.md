@@ -4,11 +4,10 @@
 Gerencie suas playlists e descubra novas combinações de hits com facilidade.
 
 ---
+## Tecnologias utilizadas
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-purple?style=flat-square)
 ![JavaScript](https://img.shields.io/badge/feito%20com-JavaScript-yellow?style=flat-square)
 ![Node.js](https://img.shields.io/badge/executado%20em-Node.js-green?style=flat-square)
-![Licença](https://img.shields.io/badge/licença-MIT-blue?style=flat-square)
 
 ---
 
