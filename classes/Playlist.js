@@ -2,6 +2,7 @@ import { bancoMusica } from '../data/bancoMusica.js';
 
 export default class Playlist {
     #musicas = [];
+    #nome
 
     constructor(nome, inicial = true) {
         this.nome = nome;
@@ -11,6 +12,11 @@ export default class Playlist {
         }
     }
 
+    set nome(valor) {
+        if (!valor) throw new Error("O nome da música não pode ser vazio.");
+        this.#nome = valor;
+    }
+    
     adicionarMusica(musica) {
         this.#musicas.push(musica);
     }
@@ -35,6 +41,3 @@ export default class Playlist {
         return [...this.#musicas]; 
     }
 }
-
-const minhaPlaylist = new Playlist("Favoritas");
-minhaPlaylist.adicionarMusica(bancoMusica[0]); // adiciona a primeira música do banco

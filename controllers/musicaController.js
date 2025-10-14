@@ -169,7 +169,7 @@ export function atualizaMusicas(callback) {
 export function listaFavoritas(callback) {
     const favoritas = bancoMusica.filter((m) => m.favorita === true);
 
-    console.log("\n🎵 Músicas Favoritas:");
+    console.log("\n Músicas Favoritas:");
     if (favoritas.length === 0) {
         console.log("Nenhuma música favorita encontrada.");
     } else {
@@ -177,7 +177,7 @@ export function listaFavoritas(callback) {
             favoritas.map((m, i) => ({
                 Nome: m.nome,
                 Artista: m.artista,
-                Favorita: '❤️'
+                Favorita: 'Sim'
             }))
         );
         if (callback) callback();

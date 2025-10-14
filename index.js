@@ -1,5 +1,5 @@
 
-import { exibirMenu } from './menu/cli.js'; 
+import { exibirMenu } from './menu/cli.js';
 
 exibirMenu();
 
