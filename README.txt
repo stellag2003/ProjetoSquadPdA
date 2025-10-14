@@ -1,4 +1,4 @@
-# 🎵 Make Hits  
+""" # 🎵 Make Hits  
 
 > Um app para quem vive no ritmo da música!  
 Gerencie suas playlists e descubra novas combinações de hits com facilidade.  
@@ -67,3 +67,5 @@ node index.js
 - 🎨 Criar uma interface visual em HTML/CSS/JS
 - 🧪 Adicionar testes automatizados
 - 🌐 Transformar em uma aplicação web interativa
+
+"""
