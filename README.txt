@@ -52,6 +52,17 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
 
 ## 🚀 **Como Executar o Projeto**
 
-1. Verifique se o **Node.js** está instalado em seu computador:  
-```bash
-node -v
+1.  Verifique se o **Node.js** está instalado em seu computador:  
+    ```bash
+    node -v
+    ```
+2.  Clone este repositório para a sua máquina:
+    ```bash
+    git clone [LINK_DO_SEU_REPOSITORIO]
+    cd [pasta-do-projeto]
+    ```
+3.  Execute o arquivo principal (geralmente `index.js` ou `app.js` em projetos Node.js simples):
+    ```bash
+    node index.js
+    ```
+    *(Ajuste o nome do arquivo se o ponto de entrada do seu projeto for diferente)*
