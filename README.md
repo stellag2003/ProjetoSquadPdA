@@ -4,11 +4,10 @@
 Gerencie suas playlists e descubra novas combinações de hits com facilidade.
 
 ---
+## Tecnologias utilizadas
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-purple?style=flat-square)
 ![JavaScript](https://img.shields.io/badge/feito%20com-JavaScript-yellow?style=flat-square)
 ![Node.js](https://img.shields.io/badge/executado%20em-Node.js-green?style=flat-square)
-![Licença](https://img.shields.io/badge/licença-MIT-blue?style=flat-square)
 
 ---
 
@@ -65,6 +64,7 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
     node index.js
     ```
     
+<<<<<<< HEAD
 =======
     git clone [LINK_DO_SEU_REPOSITORIO]
     cd [pasta-do-projeto]
@@ -75,3 +75,5 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
     ```
     *(Ajuste o nome do arquivo se o ponto de entrada do seu projeto for diferente)*
 >>>>>>> fa04d856f2daa3c0591d84432f1431b5a8536fa6:README.txt
+=======
+>>>>>>> 533b69bb3bd0481595b371c9241b3b4c3250bd52

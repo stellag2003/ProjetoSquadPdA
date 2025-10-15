@@ -1,4 +1,5 @@
 import readline from "readline";
+import chalk from 'chalk';
 import { bancoMusica } from '../data/bancoMusica.js'
 import { schemas } from "../validation/schemas.js";
 import Musica from '../classes/Musica.js'
@@ -115,6 +116,7 @@ export function atualizaMusicas(callback) {
         return callback();
     }
 
+    console.log(chalk.yellow('=== Digite o número da música que deseja atualizar ===\n'))
     bancoMusica.forEach((m, i) => console.log(`${i + 1} - ${m.nome} (${m.artista})`));
 
     rl.question("Número da música: ", (numStr) => {
