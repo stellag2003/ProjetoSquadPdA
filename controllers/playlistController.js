@@ -41,7 +41,7 @@ function criarPlaylist(nome, genero) {
   bancoDePlaylists.push(novaPlaylist);
 
   console.log(`Playlist "${nome}" criada com sucesso!`);
-  // Use novaPlaylist aqui, não 'nova'
+
   console.log("Conteúdo da playlist:", novaPlaylist.musicas.map(m => `${m.nome} - ${m.cantor}`));
 
   return novaPlaylist;
