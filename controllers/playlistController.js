@@ -1,21 +1,30 @@
+import { bancoMusica } from '../data/bancoMusica.js';
+import {rl} from './musicaController.js'
+
 export function gerarPlaylistAleatoria(callback) {
+    if (bancoMusica.length === 0) {
+        console.log("Nenhuma música disponível para criar playlist.");
+        if (callback) callback();
+        return;
+    }
+
     const copiaMusicas = [...bancoMusica];
     const playlistAleatoria = [];
 
-    while (copiaMusicas.length > 0) {
+    const quantidade = Math.min(5, copiaMusicas.length);
+
+    while (playlistAleatoria.length < quantidade) {
         const indice = Math.floor(Math.random() * copiaMusicas.length);
         playlistAleatoria.push(copiaMusicas.splice(indice, 1)[0]);
     }
-
-    console.log("Playlist aleatoria gerada:");
     
     const playlistFormatada = playlistAleatoria.map((musica, index) => ({
         '#': index + 1,
-        'Musica': musica.nome,
+        'Música': musica.nome,
         'Artista': musica.artista,
-        'Genero': musica.genero,
-        'Duracao': musica.duracao,
-        'Favorita': musica.favorita ? 'SIM' : 'NAO'
+        'Gênero': musica.genero,
+        'Duração': musica.duracao,
+        'Favorita': musica.favorita ? 'SIM' : 'NÃO'
     }));
     
     console.table(playlistFormatada);
@@ -56,9 +65,10 @@ export function criarPlaylist(callback) {
                         console.log("Generos disponiveis:");
                         console.table(generosTable);
                         
-                        rl.close();
+                        
                         resolve(null);
-                        return;
+                        criarPlaylist(callback);
+                        return
                     }
 
                     const playlistAleatoria = [...musicasFiltradas].sort(() => Math.random() - 0.5);
@@ -71,7 +81,6 @@ export function criarPlaylist(callback) {
                     bancoDePlaylists.push(novaPlaylist);
 
                     console.log(`\nPlaylist "${nome}" criada com sucesso!`);
-                    console.log(`Total de musicas: ${playlistAleatoria.length}`);
                     
                     const playlistTable = playlistAleatoria.map((musica, index) => ({
                         '#': index + 1,
