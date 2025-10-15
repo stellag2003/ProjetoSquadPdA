@@ -60,13 +60,14 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
     cd [pasta-do-projeto]
     ```
 3. Execute o arquivo principal (`index.js`):
+   
+     ```bash
+    git clone  https://github.com/stellag2003/ProjetoSquadPdA
+   
+    ```
+     
     ```bash
     node index.js
-    ```
-    
-    git clone  https://github.com/stellag2003/ProjetoSquadPdA
-    cd [pasta-do-projeto]
-   
     ```
 3. Execute o arquivo principal (`index.js`):
     ```bash
