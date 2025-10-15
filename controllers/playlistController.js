@@ -11,7 +11,7 @@ let playlists = [];
 // CRIAR: (ALTERADO: usa a Classe Playlist importada)
 export function criarPlaylist(callback) {
     rl.question("Digite o nome da playlist: ", (nome) => {
-        const novaPlaylist = new Playlist(nome); 
+        const novaPlaylist = new Playlist(); 
         playlists.push(novaPlaylist);
         console.log(`Playlist "${nome}" criada com sucesso!`);
 
