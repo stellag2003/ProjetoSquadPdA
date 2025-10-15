@@ -55,7 +55,7 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
     ```
 2. Clone este repositório para a sua máquina:
     ```bash
-<<<<<<< HEAD:README.md
+
     git clone https://github.com/stellag2003/ProjetoSquadPdA
     cd [pasta-do-projeto]
     ```
@@ -64,16 +64,12 @@ O **Make Hits** é um projeto desenvolvido em **JavaScript** que implementa as q
     node index.js
     ```
     
-<<<<<<< HEAD
-=======
-    git clone [LINK_DO_SEU_REPOSITORIO]
+    git clone  https://github.com/stellag2003/ProjetoSquadPdA
     cd [pasta-do-projeto]
+   
     ```
-3. Execute o arquivo principal (geralmente `index.js` ou `app.js` em projetos Node.js simples):
+3. Execute o arquivo principal (`index.js`):
     ```bash
     node index.js
     ```
-    *(Ajuste o nome do arquivo se o ponto de entrada do seu projeto for diferente)*
->>>>>>> fa04d856f2daa3c0591d84432f1431b5a8536fa6:README.txt
-=======
->>>>>>> 533b69bb3bd0481595b371c9241b3b4c3250bd52
+   
